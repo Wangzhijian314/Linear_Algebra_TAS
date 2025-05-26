@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>线性代数题库</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  <script defer src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>线性代数题库</h1>
+
+    <!-- 筛选器 -->
+
+    <div class="filters" id="typeButtonsContainer">
+      <label>题型：</label>
+      <button class="type-btn" data-type="选择题">选择题</button>
+      <button class="type-btn" data-type="填空题">填空题</button>
+      <button class="type-btn" data-type="判断题">判断题</button>
+      <button class="type-btn" data-type="计算题">计算题</button>
+      <button class="type-btn" data-type="证明题">证明题</button>
+    </div>
+    <!-- 二级筛选：知识点 -->
+    <div class="filters" id="knowledgeContainer" style="display: none;"></div>
+    <!-- 三级筛选：难度 -->
+    <div class="filters" id="difficultyContainer" style="display: none;"></div>
+
+
+    <!-- 题目列表 -->
+    <div id="questionContainer"></div>
+
+    <!-- 分页 -->
+    <div class="pagination">
+      <button id="prevPageBtn">上一页</button>
+      <button id="nextPageBtn">下一页</button>
+    
+      <span id="pageInfo">第 1 页</span>
+      <input type="number" id="jumpPageInput" min="1" style="width: 50px;" />
+      <button id="jumpPageBtn">跳转</button>
+    
+      <!-- 生成试卷按钮 -->
+      <div style="text-align: center; margin-top: 20px;">
+        <button id="generatePaper">生成试卷</button>
+        <button id="exportLatex">导出试卷为LaTeX文件</button>
+      </div>
+    </div>
+    
+  </div>
+  <!-- 滑出式已选题面板 -->
+  <div id="sidePanel">
+    <div id="sidePanelHeader">
+      <span>📝已选题目</span>
+      <div>
+        <button id="clearAllBtn" title="清空所有题目">🗑️</button>
+        <button id="closePanelBtn" title="关闭">✖</button>
+      </div>
+    </div>
+    <div id="selectedQuestionsList"></div>
+  </div>
+
+  <!-- 固定按钮：查看已选题 -->
+  <button id="togglePanelBtn">📝查看已选题</button>
+
+</body>
+
+</html>

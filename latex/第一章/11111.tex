@@ -1,0 +1,1491 @@
+\documentclass{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\newenvironment{question}[5]{%
+	\noindent\textbf{题型：}#1\\
+	\textbf{主题：}#2\\
+	\textbf{难度：}#3\\
+	\textbf{题目：}#4\\
+	\textbf{解析：}#5\\
+	\vspace{1em}
+}{}
+
+\begin{document}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{1.排列 41253 的逆序数为(  ).A. 4 B. 0 C. 5 D. 3}
+		{41253 所含逆序为 $41,42,43,53$ ，所以 41253 的逆序数 $N(41253)=4$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{2.排列 3712456 的逆序数为(  ).A. 7 B. 6 C. 5 D. 10}
+		{3712456 所含逆序为 $31,71,32,72,74,75,76$ ，所以 3712456 的逆序数 $N(3712456)=7$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{3.排列 36715284 的逆序数为(  ).A. 13 B. 9 C. 12 D. 10}
+		{36715284 的逆序数为 $N(36715284)=2+4+4+0+2+0+1=13$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{4.排列 654321 的逆序数为(  ).A. 15 B. 9 C. 12 D. 11}
+		{654321 的逆序数为 $N(654321)=15$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{5.排列 54321 的逆序数为(  ).A. 10 B. 9 C. 11 D. 12}
+		{54321 的逆序数为 $N(54321)=10$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{6.排列 42153 的逆序数为(  ).A. 5 B. 0 C. 4 D. 3}
+		{42153 的逆序数为 $N(42153)=5$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{7.排列 42153 的逆序数为(  ).A. 5 B. 0 C. 4 D. 3}
+		{42153 的逆序数为 $N(42153)=5$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{8.排列 13725468 的逆序数为(  ).A. 6 B. 5 C. 7 D. 8}
+		{13725468 的逆序数为 $N(13725468)=6$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{9.排列 361524 的逆序数为(  ).A. 8 B. 9 C. 11 D. 10}
+		{361524 的逆序数为 $N(361524)=8$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{10.排列 634512 的逆序数为(  ).A. 11 B. 9 C. 12 D. 10}
+		{634512 的逆序数为 $N(634512)=11$.}
+	\end{question}
+	
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{11.排列 $n(n-1)(n-2)\cdots321$ 的逆序数为（ ）。A. $\frac{n(n-1)}{2}$ B. $n$ C. $n-1$ D. 不确定}
+		{$n(n-1)(n-2)\cdots321$ 的逆序数为 $(n-1)+(n-2)+\cdots+2+1=\frac{n(n-1)}{2}$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{12.下列排列是偶排列的是（）。A. 12345 B. 53214 C. 654321 D. 32145}
+		{$\tau(12345)=0,\ \tau(53214)=7,\ \tau(654321)=15,\ \tau(32145)=3$，所以只有 12345 是偶排列。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{13.计算行列式 $\begin{matrix}0 & 1 & 0 & \cdots & 0 \\ 0 & 0 & 2 & \cdots & 0 \\ \vdots & \vdots & \vdots & & \vdots \\ 0 & 0 & 0 & \cdots & n-1 \\ n & 0 & 0 & \cdots & 0\end{matrix}$ 的值是（ ）。A. $(-1)^{n-1}n!$ B. $n$ C. $n(n+1)$ D. $n(n-1)$}
+		{该行列式的非零项只有 $a_{12}a_{23}\cdots a_{n-1,n}a_{n1}$，其逆序数为 $n-1$，所以行列式值为 $(-1)^{n-1}\times1\times2\times\cdots\times n = (-1)^{n-1}n!$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{14.计算行列式 $\begin{matrix}0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ -1 & 0 & 0 & 0\end{matrix}$ 的值是（ ）。A. -1 B. 1 C. 2 D. 0}
+		{仅有非零项为 $a_{13}a_{22}a_{34}a_{41}$，其对应排列为 $3241$，逆序数为4，故带正号；乘积为 $1\times1\times1\times(-1) = -1$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{15.判断 4 阶行列式中 $a_{11}a_{33}a_{44}a_{22}$ 和 $a_{24}a_{31}a_{13}a_{42}$ 的符号分别为（ ）。A. 正，正 B. 正，负 C. 负，正 D. 负，负}
+		{$a_{11}a_{33}a_{44}a_{22}$ 实为 $a_{11}a_{22}a_{33}a_{44}$，为正；$a_{24}a_{31}a_{13}a_{42}$ 的列标为 3412，为偶排列，故也为正。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{16.行列式 $\begin{matrix}x & x & 1 & 0 \\ 1 & x & 2 & 3 \\ 3 & 2 & x & 2 \\ 1 & 1 & 2 & x\end{matrix}$ 中 $x^4$ 的系数为（ ）。A. 1 B. 3 C. -1 D. 2}
+		{含有 $x^4$ 的项只有 $x\cdot x\cdot x\cdot x$ 一项，带正号，所以系数为 1。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{17.行列式 $\begin{matrix}x & 1 & 1 & 2 \\ 1 & x & 1 & -1 \\ 3 & 2 & x & 1 \\ 1 & 1 & 2x & 1\end{matrix}$ 中 $x^3$ 的系数为（ ）。A. -1 B. 3 C. 1 D. 2}
+		{含 $x^3$ 的项有两项，一项为 $x\cdot x\cdot x\cdot1$，带正号；另一项为 $x\cdot x\cdot1\cdot2x$，带负号；系数和为 $1-2=-1$。}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{1.排列12543678是奇排列(  ).}
+		{12543678 逆序数为 3 ，为奇排列.}
+	\end{question}
+	
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{2. $a_{21} a_{53} a_{16} a_{42} a_{65} a_{34}$ 在六阶行列式中是带负号的项（）。}
+		{$N(251463)+N(136254)=6+5=11$ 为奇数，所以 $a_{21} a_{53} a_{16} a_{42} a_{65} a_{34}$ 前面应冠以负号．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{3. $a_{15} a_{23} a_{32} a_{44} a_{51} a_{66}$ 在六阶行列式中是带负号的项（）。}
+		{$N(532416)=8$ 为偶数，所以 $a_{15} a_{23} a_{32} a_{44} a_{51} a_{66}$ 前面应冠以正号，由此知结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{4. $a_{11} a_{26} a_{32} a_{44} a_{53} a_{65}$ 在六阶行列式中是带负号的项（）。}
+		{$N(162435)=5$ 为奇数，所以 $a_{11} a_{26} a_{32} a_{44} a_{53} a_{65}$ 前面应冠以负号．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{5. $a_{51} a_{32} a_{13} a_{44} a_{65} a_{26}$ 在六阶行列式中是带正号的项（）。}
+		{$N(531462)=8$ 为偶数，所以 $a_{51} a_{32} a_{13} a_{44} a_{65} a_{26}$ 前面应冠以正号．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{6. $n$ 阶行列式中有一行元素为零，行列式为零（）。}
+		{因为 $n$ 阶行列式中有一行元素为零，则所有项均为零，因此行列式为零。}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{7. 排列 36715284 是偶排列（）。}
+		{36715284 的逆序数为 $N(36715284)=3+4+0+4+2+0+0+0=13$ ，为奇排列．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{8. $a_{21} a_{53} a_{16} a_{42} a_{64} a_{35}$ 在六阶行列式中是带正号的项（）。}
+		{$N(251436)+N(136245)=5+4=9$ 为奇数，所以 $a_{21} a_{53} a_{16} a_{42} a_{64} a_{35}$ 前面应冠以负号．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{9. 排列 31245678 是奇排列（）。}
+		{31245678 的逆序数为 2 ，为偶排列．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{10. 排列 31765284 是奇排列（）。}
+		{$N(31765284)=12$ ，为偶排列．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{11. 排列 3761524 是奇排列（）。}
+		{$N(3761524)=13$ ，为奇排列．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{12. 排列 1234 是奇排列（）。}
+		{1234 没有逆序，故逆序数为 0 ，为偶排列．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{13. $a_{61} a_{52} a_{43} a_{34} a_{15} a_{26}$ 在六阶行列式中是带正号的项（）。}
+		{$N(654312)=14$ 为偶数，所以 $a_{61} a_{52} a_{43} a_{34} a_{15} a_{26}$ 前面应冠以正号．}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{1.排列132487695的逆序数为(  ).}
+		{此排列含 8 个逆序.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{2.排列132487659的逆序数为(  ).}
+		{此排列含 7 个逆序.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{3.排列7613542的逆序数为(  ).}
+		{此排列含 15 个逆序.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{4.排列1324765的逆序数为(  ).}
+		{此排列含 4 个逆序.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{5.排列41325的奇偶性为(  ).}
+		{此排列含 4 个逆序，所以是偶排列.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{6.排列76813542的逆序数为(  ).}
+		{此排列含 20 个逆序.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{7.排列13248765的逆序数为(  ).}
+		{此排列含 7 个逆序.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{8.排列453126的奇偶性为(  ).}
+		{此排列含 8 个逆序，所以是偶排列.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{9.排列613542的逆序数为(  ).}
+		{此排列含 9 个逆序.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{10.排列132465的逆序数为(  ).}
+		{此排列含 2 个逆序.}
+	\end{question}
+	
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{11.排列7613542的逆序数为(  ).}
+		{此排列含 15 个逆序.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{12.计算行列式 $D=\begin{vmatrix}a & a & a & 1 \\ a & a & 1 & 0 \\ a & 1 & 0 & 0 \\ 1 & 0 & 0 & 0\end{vmatrix}=$(  ).}
+		{$D$ 只含一项非零项 $1 \cdot 1 \cdot 1 \cdot 1$，符号由 $N(4321)=6$ 确定，带正号，所以 $D=1$.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{13.求行列式 $D=\begin{vmatrix}a & a & a & 2 \\ a & a & -2 & 0 \\ a & 2 & 0 & 0 \\ 2 & 0 & 0 & 0\end{vmatrix}=$(  ).}
+		{$D$ 只含一项非零项 $2 \cdot (-2) \cdot 2 \cdot a$，符号由 $N(4321)=6$ 确定，带正号，所以 $D=-16$.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{14.计算行列式 $D=\begin{vmatrix}0 & a_{12} & 0 & 0 \\ 0 & 0 & 0 & a_{24} \\ a_{31} & 0 & 0 & 0 \\ 0 & 0 & a_{43} & 0\end{vmatrix}=$(  ).}
+		{只含一项非零项 $a_{12} a_{24} a_{31} a_{43}$，符号由 $N(2413)=3$，带负号，所以 $D=-a_{12} a_{24} a_{31} a_{43}$.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{15.计算行列式 $D=\begin{vmatrix}0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 2 \\ 3 & 0 & 0 & 0 \\ 0 & 0 & 4 & 0\end{vmatrix}=$(  ).}
+		{只含一项非零项 $1 \cdot 2 \cdot 3 \cdot 4=24$，符号由 $N(2413)=3$，带负号，所以 $D=-24$.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{16.计算行列式 $D=\begin{vmatrix}0 & a_{12} & 0 & 0 \\ 0 & 0 & 0 & -a_{24} \\ a_{31} & 0 & 0 & 0 \\ 0 & 0 & a_{43} & 0\end{vmatrix}=$(  ).}
+		{只含一项非零项 $a_{12} \cdot (-a_{24}) \cdot a_{31} \cdot a_{43}$，符号由 $N(2413)=3$，带负号，所以 $D=a_{12} a_{24} a_{31} a_{43}$.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{17.在六阶行列式中，$a_{15} a_{23} a_{32} a_{44} a_{51} a_{66}$ 应取的符号为(  ).}
+		{由排列 532416 的逆序数为 8，故符号为 $(-1)^8 = 1$.}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{18.四阶行列式中含有因子 $a_{11} a_{23}$ 的项是(  )和(  ).}
+		{含有 $a_{11} a_{23}$ 的项为 $(-1)^{r(1324)} a_{11} a_{23} a_{32} a_{44}$ 和 $(-1)^{r(1342)} a_{11} a_{23} a_{34} a_{42}$.}
+	\end{question}
+	
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{1.用定义计算行列式 $\begin{vmatrix}0 & \cdots & 0 & 1 \\ 0 & \cdots & 2 & 0 \\ \cdots & \cdots & \cdots & \cdots \\ n & \cdots & 0 & 0\end{vmatrix}$ 的值(  ).}
+		{设 $\begin{vmatrix}0 & \cdots & 0 & 1 \\ 0 & \cdots & 2 & 0 \\ \cdots & \cdots & \cdots & \cdots \\ n & \cdots & 0 & 0\end{vmatrix}=a_{i j}$ ，根据行列式的定义，$a_{i j}$
+			的展开式中，除 $a_{1 n} a_{2, n-1} \cdots a_{n 1}$ 连乘积这一项外，其他各项中至少含有一个零元素，故皆为零，因此：$a_{i j}=(-1)^{N(n \cdot 21)} a_{1 n} a_{2, n-1} \cdots a_{n 1}$ $=(-1)^{\frac{n(n-1)}{2}} 1 \cdot 2 \cdots n=(-1)^{\frac{n(n-1)}{2}} n!$ .}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{1.利用行列式的性质，计算行列式 $\begin{vmatrix}1 & 2 & 1 \\ 0 & 2 & 0 \\ 0 & 0 & 3\end{vmatrix}=$().A. 6 B.-6 C.0 D.8}
+		{上三角形行列式的值等于主对角元素的乘积，因此 $\begin{vmatrix}1 & 2 & 1 \\ 0 & 2 & 0 \\ 0 & 0 & 3\end{vmatrix}=1 \times 2 \times 3=6$.}
+	\end{question}	
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{2.利用行列式的性质，计算行列式 $\begin{vmatrix}-1 & -1 & -1 \\ 8 & -5 & -2 \\ 4 & 4 & 4\end{vmatrix}=$().A. 0 B. 1 C. -1 D. 32}
+		{行列式有两行对应成比例，行列式的值为 0 ，因此 $\begin{vmatrix}-1 & -1 & -1 \\ 8 & -5 & -2 \\ 4 & 4 & 4\end{vmatrix}=0$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{3.利用行列式的性质，计算行列式 $\begin{vmatrix}1 & -2 & 2 \\ 1 & -10 & 2 \\ 1 & -8 & 2\end{vmatrix}=$().A. 0 B. 2 C. -32 D. -2}
+		{行列式有两列对应成比例，行列式的值为 0 ，因此 $\begin{vmatrix}1 & -2 & 2 \\ 1 & -10 & 2 \\ 1 & -8 & 2\end{vmatrix}=0$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{4.利用行列式的性质，计算行列式 $\begin{vmatrix}a & 0 & 0 \\ 0 & b & 0 \\ 0 & 0 & c\end{vmatrix}=$().A. $abc$ B. $-abc$ C. $a^3$ D. $b^2$}
+		{对角形行列式的值等于主对角元素的乘积，因此 $\begin{vmatrix}a & 0 & 0 \\ 0 & b & 0 \\ 0 & 0 & c\end{vmatrix}=a \times b \times c$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{5.利用行列式的性质，计算行列式 $\begin{vmatrix}7 & 8 & 9 \\ -2 & -2 & -2 \\ 1 & 1 & 1\end{vmatrix}=$().A. 0 B. 7 C. 8 D. 9}
+		{行列式有两行对应成比例，行列式的值为 0 ，因此 $\begin{vmatrix}7 & 8 & 9 \\ -2 & -2 & -2 \\ 1 & 1 & 1\end{vmatrix}=0$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{6.利用行列式的性质，计算行列式 $\begin{vmatrix}8 & 5 & 0 \\ 6 & 9 & 0 \\ 0 & 7 & 0\end{vmatrix}=$().A. 0 B. 72 C. -1 D. 1}
+		{行列式有一列元素全为零，行列式的值等于零，因此 $\begin{vmatrix}8 & 5 & 0 \\ 6 & 9 & 0 \\ 0 & 7 & 0\end{vmatrix}=0$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{7.利用行列式的性质，计算行列式 $\begin{vmatrix}1 & 2 & 1 \\ 0 & 3 & 0 \\ 0 & 0 & 3\end{vmatrix}=$().A. 9 B. -6 C. 0 D. 8}
+		{上三角形行列式的值等于主对角元素的乘积，因此 $\begin{vmatrix}1 & 2 & 1 \\ 0 & 3 & 0 \\ 0 & 0 & 3\end{vmatrix}=1 \times 3 \times 3=9$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{8.利用行列式的性质，计算行列式 $\begin{vmatrix}9 & 4 & 7 \\ 4 & 4 & 4 \\ 3 & 3 & 3\end{vmatrix}=$().A. 0 B. 9 C. 4 D. 7}
+		{行列式有两行对应成比例，行列式的值为 0 ，因此 $\begin{vmatrix}9 & 4 & 7 \\ 4 & 4 & 4 \\ 3 & 3 & 3\end{vmatrix}=0$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{9.利用行列式的性质，计算行列式 $\begin{vmatrix}3 & a & 7 \\ 3 & b & 7 \\ 3 & c & 7\end{vmatrix}=$().A. 0 B. $abc$ C. 21abc D. $-21abc$}
+		{行列式有两列对应成比例，行列式的值为 0 ，因此 $\begin{vmatrix}3 & a & 7 \\ 3 & b & 7 \\ 3 & c & 7\end{vmatrix}=0$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{10.利用行列式的性质，计算行列式 $\begin{vmatrix}-4 & 2 & 1 \\ 0 & 4 & -2 \\ 0 & 0 & 1\end{vmatrix}=$().A. -16 B. 16 C. 64 D. 32}
+		{上三角形行列式的值等于主对角元素的乘积，因此 $\begin{vmatrix}-4 & 2 & 1 \\ 0 & 4 & -2 \\ 0 & 0 & 1\end{vmatrix}=-4 \times 4 \times 1=-16$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{11.利用行列式的性质，计算行列式 $\begin{vmatrix}1 & 4 & 5 \\ 2 & 6 & 7 \\ 3 & 9 & 8\end{vmatrix}=$().A. 5 B. -5 C. 10 D. -10}
+		{通过初等行变换将行列式化为上三角形式：$\begin{vmatrix}1 & 4 & 5 \\ 2 & 6 & 7 \\ 3 & 9 & 8\end{vmatrix}=\begin{vmatrix}1 & 4 & 5 \\ 0 & -2 & -3 \\ 0 & -3 & -7\end{vmatrix}=\begin{vmatrix}1 & 4 & 5 \\ 0 & -2 & -3 \\ 0 & 0 & -\frac{5}{2}\end{vmatrix}=5$.}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{12.如果行列式的所有元素变号，则()。A. 奇阶行列式变号 B. 行列式一定不变号 C. 偶阶行列式变号 D. 行列式一定变号}
+		{每一行都提出一个负号，一共提$n$个，得$(-1)^n$，所以$n$为奇数时变号，为偶数时不变。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{13.设 $\begin{vmatrix}a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3\end{vmatrix}=k$ ，则 $\begin{vmatrix}a_1 & a_2-2a_3 & -a_3 \\ b_1 & b_2-2b_3 & -b_3 \\ c_1 & c_2-2c_3 & -c_3\end{vmatrix}=$().A. $-k$ B. $-2k$ C. $k$ D. $2k$}
+		{原行列式为$k$，第二列变为$a_2 - 2a_3$，第三列为$-a_3$，根据行列式的线性性质可得：该行列式为$\begin{vmatrix}a_1 & a_2 & -a_3 \\ b_1 & b_2 & -b_3 \\ c_1 & c_2 & -c_3\end{vmatrix} + \begin{vmatrix}a_1 & -2a_3 & -a_3 \\ b_1 & -2b_3 & -b_3 \\ c_1 & -2c_3 & -c_3\end{vmatrix} = -k$。}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{1.行列式有两行元素全相等，行列式的值一定为零(  ).}
+		{行列式的性质：行列式有两行元素全相等行列式的值等于零．所以结论正确.}
+	\end{question}
+	
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{2.行列式有一行元素全为零，行列式的值一定为零(  ).}
+		{行列式有一行元素全为零，行列式的值一定为零．所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{3.行列式有两列元素对应成比例，行列式的值一定为零(  ).}
+		{行列式的性质：行列式有两列元素对应成比例，行列式的值为 0．所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{4.行列式有两行元素的总和成比例，行列式的值一定为零(  ).}
+		{由行列式的性质，行列式有两行元素对应成比例，行列式的值为 0，但行列式两行元素的总和成比例，不一定行列式的值为零．所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{5.行列式有一列元素全为零，行列式的值不一定为零(  ).}
+		{行列式有一列元素全为零，行列式的值一定为零．所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{6.$\begin{vmatrix}2 a_1 & 2 b_1 & 2 c_1 \\ 2 a_2 & 2 b_2 & 2 c_2 \\ 2 a_3 & 2 b_3 & 2 c_3\end{vmatrix}=2\begin{vmatrix}a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3\end{vmatrix}$ (  ).}
+		{因为 $\begin{vmatrix}2 a_1 & 2 b_1 & 2 c_1 \\ 2 a_2 & 2 b_2 & 2 c_2 \\ 2 a_3 & 2 b_3 & 2 c_3\end{vmatrix}=2^3\begin{vmatrix}a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3\end{vmatrix}$，所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{7.$n$ 阶行列式非零元素的个数少于 $n$ 个，行列式的值一定为零(  ).}
+		{行列式非零元素的个数少于 $n$ 个，行列式一定有一行或一列全为零，行列式的值一定为零．所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{8.$n$ 阶行列式主对角元素全为零，行列式的值一定为零(  ).}
+		{行列式主对角元素全为零，行列式的值不一定为零．所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{9.行列式各行元素之和为零，行列式的值一定为零(  ).}
+		{行列式各行元素之和为零，利用性质，把各列加于第一列，则第一列全为零，因此行列式为零．所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{10.行列式各列元素之和为零，行列式的值不一定为零(  ).}
+		{行列式各列元素之和为零，利用性质，把各行加于第一行，则第一行全为零，因此行列式为零．所以结论错误．}
+	\end{question}
+	
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{11.设 $\begin{vmatrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}\end{vmatrix}=1$ ，则 $\begin{vmatrix}a_{11} & -4 a_{12} & a_{13} \\ 3 a_{21} & -12 a_{22} & 3 a_{23} \\ a_{31} & -4 a_{32} & a_{33}\end{vmatrix}=12(  ).$}
+		{$\begin{vmatrix}a_{11} & -4 a_{12} & a_{13} \\ 3 a_{21} & -12 a_{22} & 3 a_{23} \\ a_{31} & -4 a_{32} & a_{33}\end{vmatrix}=-4\begin{vmatrix}a_{11} & a_{12} & a_{13} \\ 3 a_{21} & 3 a_{22} & 3 a_{23} \\ a_{31} & a_{32} & a_{33}\end{vmatrix}=-12\begin{vmatrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}\end{vmatrix}=-12$，所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{12.设 $\begin{vmatrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}\end{vmatrix}=1$ ，则
+			$$
+			\begin{vmatrix}
+				a_{11} & -2 a_{12} & a_{13} \\
+				3 a_{21} & -6 a_{22} & 3 a_{23} \\
+				a_{31} & -2 a_{32} & a_{33}
+			\end{vmatrix}=6(  ).
+			$$
+		}
+		{$\begin{vmatrix}a_{11} & -2 a_{12} & a_{13} \\ 3 a_{21} & -6 a_{22} & 3 a_{23} \\ a_{31} & -2 a_{32} & a_{33}\end{vmatrix}=-2\begin{vmatrix}a_{11} & a_{12} & a_{13} \\ 3 a_{21} & 3 a_{22} & 3 a_{23} \\ a_{31} & a_{32} & a_{33}\end{vmatrix}=$ $-6\begin{vmatrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}\end{vmatrix}=-6$，所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{1.利用行列式的性质，计算行列式 $\begin{vmatrix}3 & 2 & 1 & 7 \\ 0 & 4 & 6 & -9 \\ 0 & 0 & 1 & 8 \\ 0 & 0 & 0 & -4\end{vmatrix}=$(  ).}
+		{上三角形行列式的值等于主对角元素的乘积，因此$$
+			\begin{vmatrix}
+				3 & 2 & 1 & 7 \\
+				0 & 4 & 6 & -9 \\
+				0 & 0 & 1 & 8 \\
+				0 & 0 & 0 & -4
+			\end{vmatrix}=3 \times 4 \times 1 \times(-4)=-48
+			$$}
+	\end{question}	
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{2. 利用行列式的性质，计算行列式 $\begin{vmatrix}1 & 2 & 3 \\ 0 & 1 & 2 \\ 1 & 1 & 1\end{vmatrix}=$（ ）。}
+		{第三行乘以1加到第二行，得到两行相等，因此
+			$$
+			\begin{vmatrix}
+				1 & 2 & 3 \\
+				0 & 1 & 2 \\
+				1 & 1 & 1
+			\end{vmatrix}
+			=\begin{vmatrix}
+				1 & 2 & 3 \\
+				1 & 2 & 3 \\
+				1 & 1 & 1
+			\end{vmatrix}=0
+			$$}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{3. 利用行列式的性质，计算行列式 $\begin{vmatrix}8 & 1 & 5 \\ 6 & 3 & -11 \\ 0 & 0 & 0\end{vmatrix}=$（ ）。}
+		{行列式有一行元素全为零，行列式的值为零，因此
+			$$
+			\begin{vmatrix}
+				8 & 1 & 5 \\
+				6 & 3 & -11 \\
+				0 & 0 & 0
+			\end{vmatrix}=0
+			$$}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{4. 利用行列式的性质，计算行列式 $\begin{vmatrix}1 & 2 & 3 \\ 3 & -1 & 7 \\ 3 & -1 & 7\end{vmatrix}=$（ ）。}
+		{行列式有两行相等，值为零，因此
+			$$
+			\begin{vmatrix}
+				1 & 2 & 3 \\
+				3 & -1 & 7 \\
+				3 & -1 & 7
+			\end{vmatrix}=0
+			$$}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{5. 利用行列式的性质，计算行列式 $\begin{vmatrix}2 & 0 & 5 \\ 6 & 0 & -1 \\ 3 & 0 & 4\end{vmatrix}=$（ ）。}
+		{行列式有一列全为零，值为零，因此
+			$$
+			\begin{vmatrix}
+				2 & 0 & 5 \\
+				6 & 0 & -1 \\
+				3 & 0 & 4
+			\end{vmatrix}=0
+			$$}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{6. 利用行列式的性质，计算行列式 $\begin{vmatrix}-3 & 2 & 1 & 7 \\ 0 & 2 & 6 & -9 \\ 0 & 0 & 1 & 8 \\ 0 & 0 & 0 & -2\end{vmatrix}=$（ ）。}
+		{上三角行列式的值等于主对角线元素的乘积，因此
+			$$
+			\begin{vmatrix}
+				-3 & 2 & 1 & 7 \\
+				0 & 2 & 6 & -9 \\
+				0 & 0 & 1 & 8 \\
+				0 & 0 & 0 & -2
+			\end{vmatrix}=(-3)\cdot2\cdot1\cdot(-2)=12
+			$$}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{7. 计算行列式 $\begin{vmatrix}2 & 1 & 1 & 1 \\ 1 & 2 & 1 & 1 \\ 1 & 1 & 2 & 1 \\ 1 & 1 & 1 & 2\end{vmatrix}=$（ ）。}
+		{将第2、3、4列分别乘以1加到第1列，得
+			$$
+			\begin{vmatrix}
+				5 & 1 & 1 & 1 \\
+				5 & 2 & 1 & 1 \\
+				5 & 1 & 2 & 1 \\
+				5 & 1 & 1 & 2
+			\end{vmatrix}=5\begin{vmatrix}
+				1 & 1 & 1 & 1 \\
+				1 & 2 & 1 & 1 \\
+				1 & 1 & 2 & 1 \\
+				1 & 1 & 1 & 2
+			\end{vmatrix}=5\cdot1\cdot1\cdot1\cdot1=5
+			$$}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{中等}
+		{8. 计算行列式 $\begin{vmatrix}3 & 1 & 1 & 1 \\ 1 & 3 & 1 & 1 \\ 1 & 1 & 3 & 1 \\ 1 & 1 & 1 & 3\end{vmatrix}=$（ ）。}
+		{将第2、3、4列分别乘以1加到第1列，得
+			$$
+			\begin{vmatrix}
+				6 & 1 & 1 & 1 \\
+				6 & 3 & 1 & 1 \\
+				6 & 1 & 3 & 1 \\
+				6 & 1 & 1 & 3
+			\end{vmatrix}=6\begin{vmatrix}
+				1 & 1 & 1 & 1 \\
+				1 & 3 & 1 & 1 \\
+				1 & 1 & 3 & 1 \\
+				1 & 1 & 1 & 3
+			\end{vmatrix}=6\cdot1\cdot2\cdot2\cdot2=48
+			$$}
+	\end{question}
+	
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{1.利用行列式的性质，计算行列式 $\begin{vmatrix}1 & 1 & 1 & 1 \\ -1 & 1 & 1 & 1 \\ -1 & -1 & 1 & 1 \\ -1 & -1 & -1 & 1\end{vmatrix}$ 的值(  ).}
+		{用性质化为上三角形行列式 $\begin{vmatrix}1 & 1 & 1 & 1 \\ -1 & 1 & 1 & 1 \\ -1 & -1 & 1 & 1 \\ -1 & -1 & -1 & 1\end{vmatrix}=$ $\begin{vmatrix}1 & 1 & 1 & 1 \\ 0 & 2 & 2 & 2 \\ 0 & 0 & 2 & 2 \\ 0 & 0 & 0 & 2\end{vmatrix}=8$.}
+	\end{question}	
+	
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{2.利用行列式的性质，计算行列式 $\begin{vmatrix}2 & -5 & 3 & 1 \\ 1 & 3 & -1 & 3 \\ 0 & 1 & 1 & -5 \\ -1 & -4 & 2 & -3\end{vmatrix}$ 的值(  ).}
+		{用性质化为上三角形行列式：
+			\[
+			\begin{aligned}
+				&\begin{vmatrix}
+					2 & -5 & 3 & 1 \\
+					1 & 3 & -1 & 3 \\
+					0 & 1 & 1 & -5 \\
+					-1 & -4 & 2 & -3
+				\end{vmatrix}
+				= -\begin{vmatrix}
+					1 & 3 & -1 & 3 \\
+					2 & -5 & 3 & 1 \\
+					0 & 1 & 1 & -5 \\
+					-1 & -4 & 2 & -3
+				\end{vmatrix} \\
+				&= -\begin{vmatrix}
+					1 & 3 & -1 & 3 \\
+					0 & -11 & 5 & -5 \\
+					0 & 1 & 1 & -5 \\
+					0 & -1 & 1 & 0
+				\end{vmatrix}
+				= \begin{vmatrix}
+					1 & 3 & -1 & 3 \\
+					0 & 1 & 1 & -5 \\
+					0 & 0 & 16 & -60 \\
+					0 & 0 & 0 & \frac{5}{2}
+				\end{vmatrix} = 40.
+			\end{aligned}
+			\]}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{3.计算行列式 $\begin{vmatrix}3 & 1 & -1 & 2 \\ -5 & 1 & 3 & -4 \\ 2 & 0 & 1 & -1 \\ 1 & -5 & 3 & -3\end{vmatrix}$ 的值(  ).}
+		{
+			\[
+			D \stackrel{\substack{c_1-2c_3 \\ c_4+c_3}}{=}
+			\begin{vmatrix}
+				5 & 1 & -1 & 1 \\
+				-11 & 1 & 3 & -1 \\
+				0 & 0 & 1 & 0 \\
+				-5 & -5 & 3 & 0
+			\end{vmatrix}
+			\]
+			对第3行展开，得：
+			\[
+			(-1)^{3+3}\begin{vmatrix}
+				5 & 1 & 1 \\
+				-11 & 1 & -1 \\
+				-5 & -5 & 0
+			\end{vmatrix} \stackrel{r_2+r_1}{=}
+			\begin{vmatrix}
+				5 & 1 & 1 \\
+				-6 & 2 & 0 \\
+				-5 & -5 & 0
+			\end{vmatrix}
+			\]
+			对第1行第3列展开，得：
+			\[
+			(-1)^{1+3} \begin{vmatrix}
+				-6 & 2 \\
+				-5 & -5
+			\end{vmatrix} = 40.
+			\]}
+	\end{question}
+	
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{4.计算行列式 $\begin{vmatrix}3 & 1 & 1 & 1 \\ 1 & 3 & 1 & 1 \\ 1 & 1 & 3 & 1 \\ 1 & 1 & 1 & 3\end{vmatrix}$ 的值(  ).}
+		{
+			\[
+			D = \begin{vmatrix}
+				6 & 1 & 1 & 1 \\
+				6 & 3 & 1 & 1 \\
+				6 & 1 & 3 & 1 \\
+				6 & 1 & 1 & 3
+			\end{vmatrix} = 6
+			\begin{vmatrix}
+				1 & 1 & 1 & 1 \\
+				1 & 3 & 1 & 1 \\
+				1 & 1 & 3 & 1 \\
+				1 & 1 & 1 & 3
+			\end{vmatrix}
+			\]
+			\[
+			= 6
+			\begin{vmatrix}
+				1 & 1 & 1 & 1 \\
+				0 & 2 & 0 & 0 \\
+				0 & 0 & 2 & 0 \\
+				0 & 0 & 0 & 2
+			\end{vmatrix} = 6 \cdot (2 \cdot 2 \cdot 2) = 48.
+			\]}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{5.计算行列式 $\begin{vmatrix}1 & 1 & 1 & 1 \\ 1 & 2 & 3 & 4 \\ 1 & 3 & 6 & 10 \\ 1 & 4 & 10 & 20\end{vmatrix}$ 的值(  ).}
+		{
+			\[
+			D = \begin{vmatrix}
+				1 & 1 & 1 & 1 \\
+				1 & 2 & 3 & 4 \\
+				1 & 3 & 6 & 10 \\
+				1 & 4 & 10 & 20
+			\end{vmatrix} =
+			\begin{vmatrix}
+				1 & 1 & 1 & 1 \\
+				0 & 1 & 2 & 3 \\
+				0 & 1 & 3 & 6 \\
+				0 & 1 & 4 & 10
+			\end{vmatrix}
+			\]
+			\[
+			=
+			\begin{vmatrix}
+				1 & 1 & 1 & 1 \\
+				0 & 1 & 2 & 3 \\
+				0 & 0 & 1 & 3 \\
+				0 & 0 & 1 & 4
+			\end{vmatrix} =
+			\begin{vmatrix}
+				1 & 1 & 1 & 1 \\
+				0 & 1 & 2 & 3 \\
+				0 & 0 & 1 & 3 \\
+				0 & 0 & 0 & 1
+			\end{vmatrix} = 1.
+			\]}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{1.已知 $n$ 阶行列式 $D=a_{i j}$ ，设 $A_{i j}$ 是 $n$ 阶行列式中 $a_{i j}$ 的代数余子式，若 $i \neq s$ ，则 $a_{i 1} A_{s 1}+a_{i 2} A_{s 2}+\ldots+a_{i n} A_{s n}=(  )$．A. 0 B.1 C.$D$ D.$-D$}
+		{行列式的任意一行与另一行的代数余子式的乘积之和等于零．}
+	\end{question}
+	
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{2.已知 $n$ 阶行列式 $D=a_{i j}$ ，设 $A_{i j}$ 是 $n$ 阶行列式中 $a_{i j}$ 的代数余子式，若 $i=s$ ，则 $a_{i 1} A_{s 1}+a_{i 2} A_{s 2}+\ldots+a_{i n} A_{s n}=(  )$．A.$D$ B.1 C.0 D.$-D$}
+		{行列式的任意一行与其代数余子式的乘积之和等于 $D$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{3.行列式 $\begin{vmatrix}-3 & 0 & 4 \\ 5 & 0 & 3 \\ x & y & 1\end{vmatrix}$ 中 $x$ 的代数余子式＝(  )．A.0 B.12 C.3 D.-4}
+		{该代数余子式为 $(-1)^{3+1}\begin{vmatrix}0 & 4 \\ 0 & 3\end{vmatrix}=0$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{4.行列式 $\begin{vmatrix}-3 & 0 & 4 \\ 5 & 0 & 3 \\ x & y & 1\end{vmatrix}$ 中 $y$ 的代数余子式＝(  )．A.29 B.-29 C.11 D.-11}
+		{$y$ 的代数余子式为 $(-1)^{3+2}\begin{vmatrix}-3 & 4 \\ 5 & 3\end{vmatrix}=29$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{5.已知四阶行列式 $D$ 中第3列元素依次为 $-1,2,1,1$ ，相应代数余子式为 $2,5,3,0$ ，则 $D=(  )$．A.11 B.-13 C.13 D.-11}
+		{$D = (-1) \times 2 + 2 \times 5 + 1 \times 3 + 1 \times 0 = 11$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{6.已知三阶行列式 $D$ 中第1列元素依次为 $-1,2,1$ ，相应代数余子式为 $2,5,3$ ，则 $D=(  )$．A.11 B.-13 C.13 D.-11}
+		{$D = (-1) \times 2 + 2 \times 5 + 1 \times 3 = 11$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{7.已知三阶行列式 $D$ 中第1行元素依次为 $1,-2,3$ ，相应代数余子式为 $4,7,2$ ，则 $D=(  )$．A.-4 B.4 C.6 D.-5}
+		{$D = 1 \times 4 + (-2) \times 7 + 3 \times 2 = -4$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{8.已知三阶行列式 $D$ 中第3行元素依次为 $-1,-2,3$ ，相应代数余子式为 $4,7,2$ ，则 $D=(  )$．A.-12 B.12 C.6 D.-5}
+		{$D = (-1) \times 4 + (-2) \times 7 + 3 \times 2 = -12$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{9.已知四阶行列式 $D$ 中第4列元素依次为 $-1,0,1,1$ ，相应代数余子式为 $2,7,3,0$ ，则 $D=(  )$．A.1 B.-1 C.4 D.-4}
+		{$D = (-1) \times 2 + 0 \times 7 + 1 \times 3 + 1 \times 0 = 1$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{10.已知四阶行列式 $D$ 中第4行元素依次为 $-4,0,-1,1$ ，相应代数余子式为 $2,7,1,0$ ，则 $D=(  )$．A.-9 B.-10 C.7 D.-7}
+		{$D = (-4) \times 2 + 0 \times 7 + (-1) \times 1 + 1 \times 0 = -9$．}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{11.已知三阶行列式 $D$ 中第1行元素依次为 $1,-2,-3$ ，相应代数余子式为 $4,7,2$ ，则 $D=(  )$．A.-16 B.14 C.16 D.-15}
+		{$D = 1 \times 4 + (-2) \times 7 + (-3) \times 2 = -16$．}
+	\end{question}
+	
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{12.已知三阶行列式 $D$ 中第 1 行元素依次为 $1,2,-3$ 且相应的余子式依次为 $4,7,2$，则 $D=(\quad)$。A. $-16$ \quad B. $-26$ \quad C. $-4$ \quad D. $26$}
+		{$D=1 \times(-1)^{1+1} \cdot 4 + 2 \times(-1)^{1+2} \cdot 7 + (-3) \times(-1)^{1+3} \cdot 2 = -16$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{13.已知三阶行列式 $D$ 中第 2 行元素依次为 $1,2,-3$ 且相应的余子式依次为 $4,7,2$，则 $D=(\quad)$。A. $16$ \quad B. $26$ \quad C. $-4$ \quad D. $-16$}
+		{$D=1 \cdot (-1)^{2+1} \cdot 4 + 2 \cdot (-1)^{2+2} \cdot 7 + (-3) \cdot (-1)^{2+3} \cdot 2 = 16$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{14.行列式 $\begin{vmatrix}7 & -1 & 4 \\ 5 & 2 & 3 \\ x & y & 9\end{vmatrix}$ 中 $x$ 的代数余子式为（\quad）。A. $-11$ \quad B. $11$ \quad C. $7$ \quad D. $-5$}
+		{$x$ 的代数余子式为 $(-1)^{3+1} \begin{vmatrix}-1 & 4 \\ 2 & 3\end{vmatrix} = -11$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{15.行列式 $\begin{vmatrix}7 & -1 & 4 \\ 5 & 2 & 3 \\ x & y & 9\end{vmatrix}$ 中 $y$ 的代数余子式为（\quad）。A. $-1$ \quad B. $1$ \quad C. $3$ \quad D. $-5$}
+		{$y$ 的代数余子式为 $(-1)^{3+2} \begin{vmatrix}7 & 4 \\ 5 & 3\end{vmatrix} = -1$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{16.已知四阶行列式 $D$ 中第 3 列元素依次为 $-1,3,2,1$，且相应的代数余子式依次为 $1,5,4,0$，则 $D=(\quad)$。A. $22$ \quad B. $-13$ \quad C. $13$ \quad D. $-22$}
+		{$D = (-1)\cdot 1 + 3\cdot 5 + 2\cdot 4 + 1\cdot 0 = 22$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{17.若 $\begin{vmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{vmatrix} = 1$，则 $\begin{vmatrix}-a_{11} & 3a_{12} & 0 \\ -a_{21} & 3a_{22} & 0 \\ 0 & 6 & 1\end{vmatrix}=(\quad)$。A. $-3$ \quad B. $3$ \quad C. $1$ \quad D. $6$}
+		{可分块计算，该值为 $(-1) \cdot 3 \cdot \begin{vmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{vmatrix} = -3$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{18.行列式 $\begin{vmatrix}3 & 4 & 9 \\ 5 & 7 & -1 \\ 2 & 1 & 4\end{vmatrix}$ 中元素 $a_{23}$ 的代数余子式 $A_{23}=(\quad)$。A. $5$ \quad B. $-3$ \quad C. $3$ \quad D. $-5$}
+		{$A_{23} = (-1)^{2+3} \begin{vmatrix}3 & 4 \\ 2 & 1\end{vmatrix} = 5$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{19.若 $\begin{vmatrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}\end{vmatrix} = d$，则
+			$$
+			\begin{vmatrix}
+				2 a_{11} & 2 a_{12} & 2 a_{13} \\
+				3 a_{31} & 3 a_{32} & 3 a_{33} \\
+				-a_{21} & -a_{22} & -a_{23}
+			\end{vmatrix} = (\quad)
+			$$
+			A. $6d$ \quad B. $3d$ \quad C. $2d$ \quad D. $-6d$}
+		{变换后为 $-6 \cdot \begin{vmatrix}a_{11} & a_{12} & a_{13} \\ a_{31} & a_{32} & a_{33} \\ a_{21} & a_{22} & a_{23}\end{vmatrix} = 6d$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{中等}
+		{20.行列式 $\begin{vmatrix}1 & 0 & a & 1 \\ 0 & -1 & b & -1 \\ -1 & -1 & c & -1 \\ -1 & 1 & d & 0\end{vmatrix}$ 按第 3 列展开，则 $a$ 的符号为（\quad），行列式的值为（\quad）。A. $(-1)^{1+3},\ a + b + d$ \quad B. $(-1)^{1+3},\ a - b - c$ \quad C. $(-1)^{1+3},\ a + b - c$ \quad D. $(-1)^3,\ a + b + c$}
+		{按第 3 列展开，整体值为 $a + b + d$，$a$ 的符号为 $(-1)^{1+3}$。}
+	\end{question}
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{21. 将行列式 $\begin{vmatrix}1 & 0 & 2a & 1 \\ 0 & -1 & -b & -1 \\ -1 & -1 & c & -1 \\ -1 & 1 & d & 0\end{vmatrix}$ 按第三列展开，则 $2a$ 的代数余子式为（），行列式的值为（）。\\
+			A. $\begin{vmatrix}0 & -1 & -1 \\ -1 & -1 & -1 \\ -1 & 1 & 0\end{vmatrix}, 2a-b+d$ \quad
+			B. $\begin{vmatrix}0 & -1 & -1 \\ -1 & -1 & -1 \\ -1 & 1 & 0\end{vmatrix}, 2a+b+d$ \quad
+			C. $\begin{vmatrix}0 & -1 & -1 \\ -1 & -1 & -1 \\ -1 & 1 & 0\end{vmatrix}, 2a-b-d$ \quad
+			D. $\begin{vmatrix}0 & -1 & -1 \\ -1 & -1 & -1 \\ -1 & 1 & 0\end{vmatrix}, 2a+b-d$}
+		{按第三列展开行列式，$2a$ 的代数余子式为 $\begin{vmatrix}0 & -1 & -1 \\ -1 & -1 & -1 \\ -1 & 1 & 0\end{vmatrix}$，代入展开式得值为 $2a-b+d$．}
+	\end{question}
+	
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{22. 某四阶行列式 $D$ 的值为 1 ，它的第一行元素为 $1,7,2,-1$ ，而第一行元素对应的余子式分别为 $-1,0,k,4$ ，则 $k=(\quad)$。\\
+			A. $-1$ \quad B. $-2$ \quad C. $1$ \quad D. $2$}
+		{由 $D = a_{11}A_{11} + a_{12}A_{12} + a_{13}A_{13} + a_{14}A_{14} = 1$，代入已知值，得 $1 \times (-1) + 7 \times 0 + 2 \times k + (-1) \times (-4) = 1$，解得 $k = -1$．}
+	\end{question}
+	
+	
+	\begin{question}
+		{选择题}
+		{行列式}
+		{容易}
+		{23. 某四阶行列式 $D$ 的值为 1 ，它的第一行元素为 $1,3,k,-1$ ，而第二行元素对应的余子式分别为 $-1,0,1,2$ ，则 $k=(\quad)$。\\
+			A. $-1$ \quad B. $-2$ \quad C. $1$ \quad D. $2$}
+		{利用代数余子式的正交性有 $a_{11}A_{21} + a_{12}A_{22} + a_{13}A_{23} + a_{14}A_{24} = 0$，代入已知得 $1\times1 + 3\times0 + k\times(-1) + (-1)\times2 = 0$，解得 $k = -1$．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{1.已知 7 阶行列式 $D=a_{i j}$ ，设 $A_{i j}$ 是 $n$ 阶行列式中 $a_{i j}$ 的代数余子式，则 $a_{11} A_{21}+a_{12} A_{22}+a_{13} A_{23}+a_{14} A_{24}+a_{15} A_{25}+a_{16} A_{26}+$ $a_{17} A_{27}=0$(  ).}
+		{行列式的任意一行与另一行的代数余子式的乘积之和等于零．所以结论正确.}
+	\end{question}	
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{2.设 $D=\begin{vmatrix}3 & -1 & 2 \\ -2 & -3 & 1 \\ 0 & 1 & -4\end{vmatrix}$ ，则 $2 A_{11}+A_{21}-4 A_{31}=0$(  ).}
+		{$2 A_{11}+A_{21}-4 A_{31}=\begin{vmatrix}2 & -1 & 2 \\ 1 & -3 & 1 \\ -4 & 1 & -4\end{vmatrix}=0$ ，所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{3.行列式 $D=\begin{vmatrix}-1 & 3 & 2 \\ -5 & 2 & 0 \\ 1 & 0 & -3\end{vmatrix}$ 中元素 $a_{32}$ 的代数余子式为 $-10$(  ).}
+		{$A_{32}=(-1)^{3+2} M_{32}=(-1)^5 \begin{vmatrix}-1 & 2 \\ -5 & 0\end{vmatrix}=-10$ ，所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{4.四阶行列式 $D$ 的某行元素依次为 $1,0,k,6$ ，它们的代数余子式分别为 $3,4,2,0$ ，且 $D=-9$ ，则 $k=1$(  ).}
+		{$D=a_{i1} A_{i1}+a_{i2} A_{i2}+a_{i3} A_{i3}+a_{i4} A_{i4}=3+0+2k+0=3+2k$ ，由 $D=-9$ 得 $k=-6$ ，所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{5.设 $D=\begin{vmatrix}3 & -1 & 1 \\ -2 & -3 & 1 \\ 0 & 1 & -1\end{vmatrix}$ ，则 $A_{11}+A_{21}-A_{31}=0$(  ).}
+		{$A_{11}+A_{21}-A_{31}=\begin{vmatrix}1 & -1 & 1 \\ 1 & -3 & 1 \\ -1 & 1 & -1\end{vmatrix}=0$ ，所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{6.行列式 $D=\begin{vmatrix}-1 & 3 & 2 \\ -5 & 2 & 0 \\ 1 & 0 & -3\end{vmatrix}$ 中元素 $a_{32}$ 的余子式为 $-10$(  ).}
+		{$M_{32}=\begin{vmatrix}-1 & 2 \\ -5 & 0\end{vmatrix}=10$ ，所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{7.已知 $D$ 为三阶行列式，其第三行元素分别为 $1,3,-2$ ，它们的代数余子式分别为 $3,-2,1$ ，则 $D=-5$(  ).}
+		{$D=a_{31} A_{31}+a_{32} A_{32}+a_{33} A_{33}=1 \cdot 3 + 3 \cdot (-2) + (-2) \cdot 1 = -5$ ，所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{8.设行列式 $D=\begin{vmatrix}a^2 & ab & b^2 \\ 2a & a+b & 2b \\ 1 & 1 & 1\end{vmatrix}$ ，则它的第一行元素的代数余子式之和 $A_{11}+A_{12}+A_{13}=0$(  ).}
+		{$A_{11}+A_{12}+A_{13}=1 \cdot A_{11} + 1 \cdot A_{12} + 1 \cdot A_{13} = D = \begin{vmatrix}1 & 1 & 1 \\ 2a & a+b & 2b \\ 1 & 1 & 1\end{vmatrix}=0$ ，所以结论正确．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{9.设行列式 $D=\begin{vmatrix}a & b & c \\ a^2 & b^2 & c^2 \\ b+c & c+a & a+b\end{vmatrix}$ ，则它的第三行元素的代数余子式之和 $A_{31}+A_{32}+A_{33}=0$(  ).}
+		{$A_{31}+A_{32}+A_{33}=1 \cdot A_{31}+1 \cdot A_{32}+1 \cdot A_{33} = \begin{vmatrix}a & b & c \\ a^2 & b^2 & c^2 \\ 1 & 1 & 1\end{vmatrix}=\begin{vmatrix}1 & 1 & 1 \\ a & b & c \\ a^2 & b^2 & c^2\end{vmatrix}=(c-a)(c-b)(b-a)$ ，所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{判断题}
+		{行列式}
+		{容易}
+		{10.四阶行列式 $D$ 的某行元素依次为 $1,0,k,6$ ，它们的代数余子式分别为 $3,4,2,0$ ，且 $D=-7$ ，则 $k=2$(  ).}
+		{$D=a_{i1} A_{i1}+a_{i2} A_{i2}+a_{i3} A_{i3}+a_{i4} A_{i4}=3+0+2k+0=3+2k$ ，由 $D=-7$ 得 $k=-5$ ，所以结论错误．}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{1.若
+			$$
+			\begin{vmatrix}
+				a_{11} & a_{12} \\
+				a_{21} & a_{22}
+			\end{vmatrix}=1 \text {, 则 }\begin{vmatrix}
+				a_{11} & 3 a_{12} & 0 \\
+				a_{21} & 3 a_{22} & 0 \\
+				0 & 6 & 1
+			\end{vmatrix}= ( ).
+			$$}
+		{若 $\begin{vmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{vmatrix}=1$ ，则 $\begin{vmatrix}a_{11} & 3 a_{12} & 0 \\ a_{21} & 3 a_{22} & 0 \\ 0 & 6 & 1\end{vmatrix}$ $=(-1)^{3+3} \cdot 1\begin{vmatrix}a_{11} & 3 a_{12} \\ a_{21} & 3 a_{22}\end{vmatrix}=3\begin{vmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{vmatrix}=3$ ．} 
+	\end{question}
+	
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{2.若 $\begin{vmatrix}1 & 0 & 2 \\ x & 3 & 1 \\ 4 & x & 5\end{vmatrix}$ 的代数余子式 $A_{12}=-1$ ，则代数余子式 $A_{21}=$（ ）．}
+		{因为 $A_{12}=(-1)^{1+2}\begin{vmatrix}x & 1 \\ 4 & 5\end{vmatrix}=-(5x-4)=-1$，可得 $5x-4=1$，解得 $x=1$。代入后，$A_{21}=(-1)^{2+1}\begin{vmatrix}0 & 2 \\ 1 & 5\end{vmatrix}=(-1)\cdot(0\times5 - 2\times1) = (-1)\cdot(-2)=2$。}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{3.设 $D=\begin{vmatrix}1 & 0 & 0 & 0 \\ -2 & 7 & 6 & -3 \\ -4 & 8 & 3 & -5 \\ 9 & -7 & 2 & 5\end{vmatrix}$，则元素 8 的余子式为（ ），其代数余子式为（ ）。}
+		{元素 8 在第3行第2列，即 $a_{32}=8$。其余子式 $M_{32} = \begin{vmatrix}1 & 0 & 0 \\ -2 & 6 & -3 \\ 9 & 2 & 5\end{vmatrix} = 36$，代数余子式 $A_{32} = (-1)^{3+2} M_{32} = -36$。}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{4.已知行列式 $\begin{vmatrix}4 & 3 & 2 & 1 \\ 1 & 4 & 3 & 2 \\ 2 & 1 & 4 & 3 \\ 3 & 2 & 1 & 4\end{vmatrix}$，则 $3A_{14}+4A_{24}+A_{34}+2A_{44}=$（ ）。}
+		{$3A_{14}+4A_{24}+A_{34}+2A_{44}$ 是第2列的元素与第4列对应代数余子式的乘积之和，按照行列式性质，该和等于行列式中第2列与第4列对应展开的混合式，即 $0$。}
+	\end{question}
+	
+	\begin{question}
+		{填空题}
+		{行列式}
+		{容易}
+		{5.四阶行列式 $D$ 中第三列元素为 $1,2,3,4$，对应的余子式为 $1,-1,2,1$，则 $D$ 的值为（ ）。}
+		{设 $a_{13}=1, a_{23}=2, a_{33}=3, a_{43}=4$，相应代数余子式 $A_{13}=1, A_{23}=1, A_{33}=2, A_{43}=-1$，所以 $D=1\times1 + 2\times1 + 3\times2 + 4\times(-1) = 1+2+6-4=5$。}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{1.已知 $D=\begin{vmatrix}1 & 0 & 0 \\ 2 & 3 & 0 \\ 4 & 5 & 6\end{vmatrix}$ ，求 $A_{11}+2 A_{21}+4 A_{31}$ ，其中 $A_{i j}$ 表示 $D$ 中 $a_{i j}$ 的代数余子式(  ).}
+		{$A_{11}+2 A_{21}+4 A_{31}=D=18$ .}
+	\end{question}
+	
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{2. 已知 $D=\begin{vmatrix}1 & 0 & 0 \\ 2 & 3 & 0 \\ 4 & 5 & 6\end{vmatrix}$，求 $7 A_{31} + 8 A_{32} + 9 A_{33}$，其中 $A_{ij}$ 表示 $D$ 中 $a_{ij}$ 的代数余子式（ ）。}
+		{$7 A_{31} + 8 A_{32} + 9 A_{33} = \begin{vmatrix}1 & 0 & 0 \\ 2 & 3 & 0 \\ 7 & 8 & 9\end{vmatrix} = 27$。}
+	\end{question}
+	
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{3. 设四阶行列式 $D_4=\begin{vmatrix}a & b & c & d \\ d & a & c & d \\ b & d & c & a \\ a & d & c & b\end{vmatrix}$，求 $A_{11} + A_{21} + A_{31} + A_{41}$ （ ）。}
+		{将第1列都变为1，可转化为：
+			$
+			A_{11} + A_{21} + A_{31} + A_{41} = \begin{vmatrix}1 & b & c & d \\ 1 & a & c & d \\ 1 & d & c & a \\ 1 & d & c & b\end{vmatrix} 
+			$
+			该行列式中第1列元素都为1，可将其展开：记第1列为常数列，可看作列向量线性相关，因而行列式为0，
+			所以：$A_{11} + A_{21} + A_{31} + A_{41} = 0$。}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{4. 设 $D=\begin{vmatrix}1 & 2 & 3 \\ 1 & 0 & -1 \\ -2 & 0 & 3\end{vmatrix}$，其中 $A_{ij}$ 表示代数余子式，求 $A_{11}+A_{22}+A_{33}$ （ ）。}
+		{$A_{11} = (-1)^{1+1} \begin{vmatrix}0 & -1 \\ 0 & 3\end{vmatrix} = 1 \cdot (0 \cdot 3 - (-1)\cdot 0) = 0, $ $A_{22} = (-1)^{2+2} \begin{vmatrix}1 & 3 \\ -2 & 3\end{vmatrix} = (1)(1 \cdot 3 - 3 \cdot (-2)) = 9, $ $A_{33} = (-1)^{3+3} \begin{vmatrix}1 & 2 \\ 1 & 0\end{vmatrix} = 1 \cdot (1 \cdot 0 - 2 \cdot 1) = -2, A_{11} + A_{22} + A_{33} = 0 + 9 - 2 = 7.$}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{容易}
+		{5.已知四阶行列式 \$D\$ 的第3行元素依次为 \$-1,2,0,1\$，它们的余子式分别为 \$5,3,-7,4\$，求行列式的值（ ）。}
+		{由题设余子式 $M_{31}=5, M_{32}=3, M_{33}=-7, M_{34}=4$ ，故代数余子式为 $A_{31}=5, A_{32}=-3, A_{33}=-7, A_{34}=-4$ ，所以 $D=$ $(-1) \times 5+2 \times(-3)+0 \times(-7)+1 \times(-4)=-15$ ．}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{6.设 $D=\begin{vmatrix}3 & -5 & 2 & 1 \\ 1 & 1 & 0 & -5 \\ -1 & 3 & 1 & 3 \\ 2 & -4 & -1 & -3\end{vmatrix}$ 的代数余子式为 $A_{ij}$，求 $A_{11}+2 A_{12}+A_{13}+A_{14}$（ ）。}
+		{将行列式按照第 i 行展开：$|D|=a_{i 1} A_{i 1}+a_{i 2} A_{i 2}+$ $a_{i 3} A_{i 3}+a_{i 4} A_{i 4},(i=1,2,3,4)$ ，其中 $A_{i j}=(-1)^{i+j} M_{i j}$ ，令 $a_{11}=1, a_{12}=2, a_{13}=1, a_{14}=1$ ，则 $A_{11}+2 A_{12}+A_{13}+A_{14}$ $=\begin{vmatrix}1 & 2 & 1 & 1 \\ 1 & 1 & 0 & -5 \\ -1 & 3 & 1 & 3 \\ 2 & -4 & -1 & -3\end{vmatrix}=\begin{vmatrix}1 & 2 & 1 & 1 \\ 0 & -1 & -1 & -6 \\ 0 & 5 & 2 & 4 \\ 0 & -8 & -3 & -5\end{vmatrix}=$
+			$\begin{vmatrix}1 & 2 & 1 & 1 \\ 0 & -1 & -1 & -6 \\ 0 & 0 & -3 & -26 \\ 0 & 0 & 5 & 43\end{vmatrix}=\begin{vmatrix}1 & 2 & 1 & 1 \\ 0 & -1 & -1 & -6 \\ 0 & 0 & -3 & -26 \\ 0 & 0 & 0 & -\frac{1}{3}\end{vmatrix}=-1$.}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{7.设 $D=\begin{vmatrix}3 & -5 & 2 & 1 \\ 1 & 1 & 0 & -5 \\ -1 & 3 & 1 & 3 \\ 2 & -4 & -1 & -3\end{vmatrix}$ 的余子式为 $M_{ij}$，求 $3 M_{21}+5 M_{22}+M_{23}+2 M_{24}$（ ）。}
+		{$3 M_{21}+5 M_{22}+M_{23}+2 M_{24}=-3 A_{21}+5 A_{22}-A_{23}+$ $2 A_{24} =\begin{vmatrix}3 & -5 & 2 & 1 \\ -3 & 5 & -1 & 2 \\ -1 & 3 & 1 & 3 \\ 2 & -4 & -1 & -3\end{vmatrix}=-10$.}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{8.用降阶法计算行列式 $\begin{vmatrix}3 & 1 & -1 & 1 \\ -5 & 1 & 3 & -4 \\ 2 & 0 & 1 & 0 \\ 1 & -5 & 3 & -3\end{vmatrix}$（ ）。}
+		{ $D \stackrel{c_1-2 c 3}{=}\begin{vmatrix}5 & 1 & -1 & 1 \\ -11 & 1 & 3 & -4 \\ 0 & 0 & 1 & 0 \\ -5 & -5 & 3 & -3\end{vmatrix}=$
+			
+			$$
+			\begin{aligned}
+				& (-1)^{3+3}\begin{vmatrix}
+					5 & 1 & 1 \\
+					-11 & 1 & -4 \\
+					-5 & -5 & -3
+				\end{vmatrix} \\
+				=\begin{vmatrix}
+					5 & 1 & 1 \\
+					-16 & 0 & -5 \\
+					20 & 0 & 2
+				\end{vmatrix}= \\
+				& (-1)^{1+2}\begin{vmatrix}
+					-5 \\
+					20 & 2
+				\end{vmatrix}=-68 .
+			\end{aligned}
+			$$}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{9.用降阶法计算行列式 $\begin{vmatrix}1 & 1 & -1 & 2 \\ -5 & 1 & 3 & -1 \\ 2 & 0 & 1 & -1 \\ 1 & -5 & 3 & -3\end{vmatrix}$（ ）。}
+		{$$
+			\begin{aligned}
+				&D^{\stackrel{c_1+(-2) c_3}{c_4+c_3}=}\begin{vmatrix}
+					3 & 1 & -1 & 1 \\
+					-11 & 1 & 3 & 2 \\
+					0 & 0 & 1 & 0 \\
+					-5 & -5 & 3 & 0
+				\end{vmatrix}= \\
+				& (-1)^{3+3}\begin{vmatrix}
+					3 & 1 & 1 \\
+					-11 & 1 & 2 \\
+					-5 & -5 & 0
+				\end{vmatrix} \stackrel{c_2+(-1) c_1}{=}\begin{vmatrix}
+					3 & -2 & 1 \\
+					-11 & 12 & 2 \\
+					-5 & 0 & 0
+				\end{vmatrix}=(-5) \times \\
+				& (-1)^{3+1}\begin{vmatrix}
+					1 \\
+					12 & 2
+				\end{vmatrix}=80
+			\end{aligned}
+			$$}
+	\end{question}
+	
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{10.设 $D=\begin{vmatrix}1 & 2 & 3 \\ 1 & 0 & -1 \\ -2 & 0 & 3\end{vmatrix}$ ，求 $D$ ．（ ）}
+		{$D=\begin{vmatrix}1 & 2 & 3 \\ 1 & 0 & -1 \\ -2 & 0 & 3\end{vmatrix}=2 \times(-1)^{1+2}\begin{vmatrix}1 & -1 \\ -2 & 3\end{vmatrix}=$ -2 ．}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{11.设 $|A|=\begin{vmatrix}1 & -5 & 1 & 3 \\ 1 & 1 & 3 & 4 \\ 1 & 1 & 2 & 3 \\ 2 & 2 & 3 & 4\end{vmatrix}$ ，计算 $A_{41}+A_{42}+A_{43}+A_{44}$ 的值，其中 $A_{4 j}$ 是 $|A|$ 中元素 $a_{4 j}(j=1,2,3,4)$ 的代数余子式．}
+		{$$
+			\begin{aligned}
+				& A_{41}+A_{42}+A_{43}+A_{44}=\begin{vmatrix}
+					1 & -5 & 1 & 3 \\
+					1 & 1 & 3 & 4 \\
+					1 & 1 & 2 & 3 \\
+					1 & 1 & 1 & 1
+				\end{vmatrix} \stackrel{r_1 \leftrightarrows r_4}{=} \\
+				& -\begin{vmatrix}
+					1 & 1 & 1 & 1 \\
+					1 & -1 & 3 & 4 \\
+					1 & 1 & 2 & 3 \\
+					1 & -5 & 1 & 3
+				\end{vmatrix} =-\begin{vmatrix}
+					1 & 1 & 1 & 1 \\
+					= & r_4-r_1 \\
+					0 & 0 & 2 & 3 \\
+					0 & 0 & 1 & 2 \\
+					0 & -6 & 0 & 2
+				\end{vmatrix}= \\
+				& (-1)\begin{vmatrix}
+					0 & 2 & 3 \\
+					0 & 1 & 2 \\
+					-6 & 0 & 2
+				\end{vmatrix}=(-1) \times(-6) \times(-1)^{3+1}\begin{vmatrix}
+					2 & 3 \\
+					1
+				\end{vmatrix}=6 .
+			\end{aligned}
+			$$}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{12.已知行列式 $D=\begin{vmatrix}1 & 2 & 3 & 4 \\ 1 & 0 & 1 & 2 \\ 3 & -1 & -1 & 0 \\ 1 & 2 & 0 & -5\end{vmatrix}$ ，求余子式 $M_{13}$ 和代数余子式 $A_{43}$ ．}
+		{余子式 $M_{13}=\begin{vmatrix}1 & 0 & 2 \\ 3 & -1 & 0 \\ 1 & 2 & -5\end{vmatrix}=-19$ ，代数余子式 $A_{43}=$ $(-1)^{4+3}\begin{vmatrix}1 & 2 & 4 \\ 1 & 0 & 2 \\ 3 & -1 & 0\end{vmatrix}=-10$.}
+	\end{question}
+	
+	
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{13.用行列式按行（列）展开定理计算行列式：$D=$
+			
+			$$
+			\begin{vmatrix}
+				1 & 2 & 3 & 4 \\
+				1 & 0 & 1 & 2 \\
+				3 & -1 & -1 & 0 \\
+				1 & 2 & 0 & -5
+			\end{vmatrix} .
+			$$}
+		{按第二行展开
+			
+			$$
+			\begin{aligned}
+				D & =1 \cdot A_{21}+0 \cdot A_{22}+1 \cdot A_{23}+2 A_{24} \\
+				= & 1 \times(-1)^{2+1} 3+1 \times(-1)^{2+3} 63+2 \times(-1)^{2+4} 21=-3-63+42=-24
+			\end{aligned}
+			$$
+			利用展开定理时，通常结合性质将展开行（列）的较多元素化为零．}
+	\end{question}
+	
+	\begin{question}
+		{计算题}
+		{行列式}
+		{中等}
+		{14.设 $|A|=\begin{vmatrix}1 & -5 & 1 & 3 \\ 1 & 1 & 3 & 4 \\ 1 & 1 & 2 & 3 \\ 2 & 2 & 3 & 4\end{vmatrix}$ ，计算 $A_{41}+A_{42}+A_{43}+A_{44}$ 的值，其中 $A_{4 i}(i=1,2,3,4)$ 是对应元素的代数余子式．}
+		{由行列式按行展开定理 $A_{41}+A_{42}+A_{43}+A_{44}=1 \cdot A_{41}+$
+			
+			$$
+			1 \cdot A_{42}+1 \cdot A_{43}+1 \cdot A_{44}=\begin{vmatrix}
+				1 & -5 & 1 & 3 \\
+				1 & 1 & 3 & 4 \\
+				1 & 1 & 2 & 3 \\
+				1 & 1 & 1 & 1
+			\end{vmatrix}=
+			$$
+			
+			
+			$$
+			\begin{aligned}
+				& \begin{vmatrix}
+					1 & -5 & 1 & 3 \\
+					0 & 6 & 2 & 1 \\
+					0 & 6 & 1 & 0 \\
+					0 & 6 & 0 & -2
+				\end{vmatrix}=\begin{vmatrix}
+					6 & 2 & 1 \\
+					6 & 1 & 0 \\
+					6 & 0 & -2
+				\end{vmatrix}=\begin{vmatrix}
+					6 & 2 & 1 \\
+					0 & -1 & -1 \\
+					0 & -2 & -3
+				\end{vmatrix}= \\
+				& 6\begin{vmatrix}
+					-1 & -1 \\
+					-2 & -3
+				\end{vmatrix}=6 .
+			\end{aligned}
+			$$}
+	\end{question}
+	
+	
+\end{document}

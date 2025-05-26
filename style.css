@@ -1,0 +1,205 @@
+:root {
+  --main-green: #4caf50;
+  --hover-green: #45a049;
+  --main-blue: #1976d2;
+  --hover-blue: #1565c0;
+  --panel-bg: #f5f5f5;
+  --panel-border: #ccc;
+  --font-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--main-green);
+}
+
+.filters {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.filters select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#questionContainer {
+  margin-top: 20px;
+}
+
+.question {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.question:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.question h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #2e7d32;
+}
+
+.explanation {
+  display: none;
+  margin-top: 12px;
+  background: #f1f8e9;
+  padding: 12px;
+  border-left: 4px solid #66bb6a;
+  border-radius: 6px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--main-green);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--hover-green);
+  transform: scale(1.05);
+}
+
+#generatePaper, #exportLatex {
+  margin-top: 20px;
+  background-color: var(--main-blue);
+}
+
+#generatePaper:hover, #exportLatex:hover {
+  background-color: var(--hover-blue);
+}
+
+/* 固定的查看已选题按钮 */
+#togglePanelBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 右侧滑出面板 */
+#sidePanel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: var(--panel-bg);
+  border-left: 1px solid var(--panel-border);
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: right 0.3s ease, opacity 0.3s ease;
+  padding: 15px;
+  overflow-y: auto;
+  opacity: 0;
+}
+
+#sidePanel.open {
+  right: 0;
+  opacity: 1;
+}
+
+#sidePanelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#sidePanelHeader button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+#selectedQuestionsList {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 响应式布局：移动端适配 */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  #sidePanel {
+    width: 100%;
+  }
+
+  #togglePanelBtn {
+    top: 10px;
+    right: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .filters select {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
